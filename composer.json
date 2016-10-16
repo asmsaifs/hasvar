@@ -1,0 +1,36 @@
+{
+    "name": "luyadev/luya-kickstarter",
+    "description": "The kickstarter for a new LUYA application project.",
+    "type": "project",
+    "license":"MIT",
+    "minimum-stability" : "dev",
+    "require": {
+        "luyadev/luya-core" : "1.0.0-RC1",
+        "luyadev/luya-module-admin" : "1.0.0-RC1",
+        "luyadev/luya-module-cms" : "1.0.0-RC1",        
+        "luyadev/luya-module-contactform": "^1.0@dev"
+    },
+    "require-dev": {
+        "yiisoft/yii2-gii" : "~2.0.0",
+        "yiisoft/yii2-debug" : "~2.0.0"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "yii\\composer\\Installer::postCreateProject"
+        ]
+    },
+    "extra": {
+        "yii\\composer\\Installer::postCreateProject": {
+			"setPermission": [
+				{
+					"public_html/assets": "0777",
+					"public_html/storage": "0777"
+				}
+			]
+		},
+		"asset-pattern-skip-version": "(-build|-patch)",
+        "asset-installer-paths": {
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}

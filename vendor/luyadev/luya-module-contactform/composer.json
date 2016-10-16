@@ -1,0 +1,28 @@
+{
+    "name" : "luyadev/luya-module-contactform",
+    "description" : "This module provides a very fast and secure way to create customizable contact forms.",
+    "type" : "luya-module",
+    "keywords" : ["php", "luya", "module", "cms", "yii2", "yii", "contact", "form", "yii2form", "dynamicformbuilder", "yii2-form", "luya-module"],
+    "license": "MIT",
+    "homepage" : "http://luya.io",
+    "authors" : [
+        {
+            "name" : "Basil",
+            "email" : "git@nadar.io",
+            "homepage" : "https://github.com/nadar"
+        }
+    ],
+    "support" : {
+        "issues" : "https://github.com/luyadev/luya/issues"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "luya\\contactform\\" : "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

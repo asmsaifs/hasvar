@@ -21,7 +21,6 @@ class ResourcesAsset extends \luya\web\Asset
 		'css/templatemo_style.css',
 		'css/style.css',
 		'css/nav.css',
-		//'css/AdminLTE.css'
     ];
     
     public $publishOptions = [
