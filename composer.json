@@ -4,6 +4,7 @@
     "type": "project",
     "license":"MIT",
     "minimum-stability" : "dev",
+    "prefer-stable": true,
     "require": {
         "yidas/yii2-bower-asset": "~2.0.13",
         "luyadev/luya-core" : "^1.0.21",
