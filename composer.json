@@ -4,15 +4,17 @@
     "type": "project",
     "license":"MIT",
     "minimum-stability" : "dev",
+    "prefer-stable": true,
     "require": {
-        "luyadev/luya-core" : "1.0.0-RC1",
-        "luyadev/luya-module-admin" : "1.0.0-RC1",
-        "luyadev/luya-module-cms" : "1.0.0-RC1",        
-        "luyadev/luya-module-contactform": "^1.0@dev"
+        "yidas/yii2-bower-asset": "~2.0.13",
+        "luyadev/luya-core" : "^1.0.21",
+        "luyadev/luya-module-admin" : "^1.2.2",
+        "luyadev/luya-module-cms" : "^1.0.8",        
+        "luyadev/luya-module-contactform": "^1.0.11"
     },
     "require-dev": {
-        "yiisoft/yii2-gii" : "~2.0.0",
-        "yiisoft/yii2-debug" : "~2.0.0"
+        "yiisoft/yii2-gii" : "^2.2.2",
+        "yiisoft/yii2-debug" : "^2.1.0"
     },
     "scripts": {
         "post-create-project-cmd": [
